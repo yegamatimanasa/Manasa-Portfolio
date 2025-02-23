@@ -1,0 +1,206 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .App {
+    display: flex;
+    flex-direction: column;
+    height: 100%; // Full height of the viewport
+  
+    &__main-page-content {
+      flex: 1; // Fills the space between header and footer
+      overflow-y: auto; // Allows the content to scroll
+      padding: 20px; // Optional padding for better visual spacing
+    }
+  }
+  
+  // Header styles
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px; // Matches the 80px height you're accounting for
+    background-color: var(--yellow-theme-nav-background-color);
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); // Optional shadow for effect
+  }
+  
+  // Footer styles
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 60px; // Adjust this to your actual footer height
+    background-color: var(--yellow-theme-nav-background-color);
+    z-index: 1000;
+    padding: 10px 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); // Optional shadow for effect
+  }
+  
+  // Main content will adjust its height based on the header and footer heights
+  .App__main-page-content {
+    padding-top: 20px; // Adjust based on the header height
+    padding-bottom: 60px; // Adjust based on the footer height
+    // background-color: #f9f9f9; // Optional background for content area
+  }
+  
+  // Media queries for small mobile devices (320px to 480px)
+  @media (max-width: 480px) {
+    .App__main-page-content {
+      padding-top: 50px; // Reduced padding for small mobile screens
+      padding-bottom: 40px; // Reduced footer height padding
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    // Header adjustments
+    header {
+      height: 50px; // Smaller header height for small mobile
+      padding: 5px 10px;
+    }
+  
+    // Footer adjustments
+    footer {
+      height: 40px; // Smaller footer height for small mobile
+      padding: 5px 10px;
+      font-size: 0.8rem; // Adjust the font size to fit
+    }
+  
+    // Adjust text size for small mobile
+    main {
+      font-size: 0.9rem; // Smaller font size for small mobile
+      line-height: 1.3;
+    }
+  
+    // Buttons for small mobile
+    .button {
+      padding: 8px 15px;
+      font-size: 0.9rem; // Slightly smaller button text size
+    }
+  
+    // Footer links
+    .footer__link {
+      font-size: 0.8rem;
+      padding: 0 5px;
+    }
+  
+    // "Built by" text
+    .footer__left p,
+    .footer__right a {
+      font-size: 0.8rem; // Smaller font for small mobile screens
+    }
+  
+    // Adjust navigation on small mobile
+    .navbar {
+      flex-direction: column;
+      padding-top: 5px;
+    }
+  
+    .navbar a {
+      padding: 8px 0;
+      font-size: 1rem;
+    }
+  }
+  
+  // Media queries for large mobile devices (481px to 768px)
+  @media (max-width: 768px) {
+    .App__main-page-content {
+      padding-top: 60px; // Adjusted for larger mobile screens
+      padding-bottom: 50px; // Adjusted footer height
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  
+    // Header styles for large mobile
+    header {
+      height: 60px; // Reduce the height of the header on larger mobile
+      padding: 5px 10px;
+    }
+  
+    // Footer styles for large mobile
+    footer {
+      height: 50px; // Reduce the height of the footer on larger mobile
+      padding: 5px 10px;
+      font-size: 0.9rem; // Adjust the font size to fit
+    }
+  
+    // Adjust text size for larger mobile
+    main {
+      font-size: 1rem; // Adjust font size for readability on larger mobile
+      line-height: 1.4;
+    }
+  
+    // Buttons for larger mobile devices
+    .button {
+      padding: 10px 20px;
+      font-size: 1rem; // Increase the button text size slightly for larger mobile
+    }
+  
+    // Footer links
+    .footer__link {
+      font-size: 1rem;
+      padding: 0 5px; // Reduce padding to make room on larger mobile screens
+    }
+  
+    // "Built by" text
+    .footer__left p,
+    .footer__right a {
+      font-size: 0.9rem; // Slightly reduce the font size for larger mobile screens
+    }
+  
+    // Adjust header navigation for larger mobile
+    .navbar {
+      flex-direction: column; // Stack the navigation items vertically
+      padding-top: 10px;
+    }
+  
+    .navbar a {
+      padding: 10px 0;
+      font-size: 1.1rem; // Increase font size for better tap targets
+    }
+  
+    // Responsive images for large mobile devices
+    img, .image-class {
+      width: 100%; // Ensure images are responsive
+      height: auto; // Maintain aspect ratio
+    }
+  }
+  
+  // Media queries for tablets and small desktops (769px to 1024px)
+  @media (max-width: 1024px) {
+    .App__main-page-content {
+      padding-top: 70px;
+      padding-bottom: 60px;
+    }
+  
+    header {
+      height: 70px; // Header height for tablets
+    }
+  
+    footer {
+      height: 60px; // Footer height for tablets
+      font-size: 1rem; // Slightly larger font size
+    }
+  
+    main {
+      font-size: 1.1rem; // Increase font size for tablets
+      line-height: 1.5;
+    }
+  
+    .button {
+      padding: 12px 25px;
+      font-size: 1.2rem;
+    }
+  
+    .footer__link {
+      font-size: 1rem;
+    }
+  }
+  

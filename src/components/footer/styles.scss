@@ -1,0 +1,38 @@
+/* Footer Styles */
+.footer {
+    background-color: var(--yellow-theme-nav-background-color); /* Background color for the footer */
+    padding: 20px 0;
+    border-top: 1px solid var(--yellow-theme-main-color); /* Thin border on top */
+    color: var(--yellow-theme-main-color); /* Footer text color */
+    z-index: 10; // Ensure it's higher than other overlapping elements
+    position: relative; // Ensure it's positioned correctly
+    
+  }
+  
+  .footer__container {
+    display: flex;
+    justify-content: space-between; /* Space out the left and right content */
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add padding for the sides */
+  }
+  
+  .footer__left,
+  .footer__right {
+    font-size: 1.4rem; /* Text size for the footer */
+  }
+  
+  .footer__link {
+    color: var(--yellow-theme-main-color); /* Color for the links */
+    text-decoration: none;
+    font-weight: bold;
+    border-bottom: 2px solid transparent; /* Border for hover effect */
+    transition: border-bottom 0.3s ease;
+  }
+  
+  .footer__link:hover {
+    border-bottom: 2px solid var(--yellow-theme-main-color); /* Underline effect on hover */
+  }
+  

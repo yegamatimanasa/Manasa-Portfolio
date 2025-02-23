@@ -1,0 +1,297 @@
+
+.about {
+    .pageHeaderContent {
+      text-align: center; /* Center the content of PageHeaderContent */
+      margin: 0 auto; /* Center the block element */
+      padding-top: 10px;
+  }
+    &__content {
+      display: flex;
+      gap: 5px;
+      padding: 20px;
+      width: 100%;
+      align-items: center;
+  
+      &__personalWrapper,
+      &__servicesWrapper {
+        width: 50%;
+      }
+  
+      &__personalWrapper {
+  
+        p {
+          color: var(--yellow-theme-sub-text-color);
+          font-size: 18px;
+          line-height: 1.8;
+          padding-bottom: 20px;
+          // border-bottom: 1px dashed var(--yellow-theme-main-color);
+          text-align: justify;
+          margin: 30px;
+          white-space: pre-line;
+  
+        }
+  
+      }
+  
+      &__servicesWrapper {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-top: -5%;
+        &__innerContent {
+          width: 400px;
+          height: 400px;
+          background: radial-gradient(
+            180px,
+            var(--yellow-theme-main-color),
+            transparent 90%
+          );
+          position: relative;
+          border-radius: 50%;
+          border: 1.5px solid var(--yellow-theme-main-color);
+          animation: rotation 10s linear 1s infinite;
+  
+          div:nth-child(1) {
+            position: absolute;
+            top: -9%;
+            left: 41%;
+          }
+  
+          div:nth-child(2) {
+            position: absolute;
+            right: -8%;
+            top: 41.5%;
+          }
+  
+          div:nth-child(3) {
+            position: absolute;
+            bottom: -10%;
+            left: 41%;
+          }
+  
+          div:nth-child(4) {
+            position: absolute;
+            left: -8%;
+            top: 41%;
+          }
+        }
+      }
+    }
+  }
+  
+  @keyframes rotation {
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+  
+  
+  
+  
+  @media only screen and (max-width : 768px){
+      .about__content{
+          flex-direction: column;
+  
+          &__personalWrapper,
+          &__servicesWrapper {
+            width: 100%;
+          }
+  
+          &__servicesWrapper{
+              margin: 10px 0px;
+              &__innerContent {
+                  width: 300px;
+                  height: 300px;
+                  background: radial-gradient(120px,var(--yellow-theme-main-color),transparent 120%);
+  
+  
+                  div:nth-child(1) {
+                      position: absolute;
+                      top: -15%;
+                      left: 38%;
+                    }
+            
+                    div:nth-child(2) {
+                      position: absolute;
+                      right: -11%;
+                      top: 40%;
+                    }
+            
+                    div:nth-child(3) {
+                      position: absolute;
+                      bottom: -12%;
+                      left: 40%;
+                    }
+            
+                    div:nth-child(4) {
+                      position: absolute;
+                      left: -12%;
+                      top: 40%;
+                    }
+              }
+          }
+      }
+  
+  
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.resume{
+    height: 100%;
+}
+
+.timeline{
+    display: block;
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+
+    .timeline__experience {
+        padding-bottom: 100px; /* Push Education further down */
+    }
+    
+   
+
+    &__experience, &__education{
+        gap: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        &__header-text{
+            display: inline-block;
+            color: var(--yellow-theme-sub-text-color);
+            font-size: 22px;
+            font-weight: 700;
+            line-height: 1rem;
+            letter-spacing: 0.5px;
+            position: relative;
+            text-transform: uppercase;
+            padding: 5px 10px;
+            border-bottom: 2px solid var(--yellow-theme-main-color);
+        }
+
+        &__header-text::before , &__header-text::after{
+            position: absolute;
+            content: '';
+            width: 2px;
+            height: 5px;
+            background-color: var(--yellow-theme-main-color);
+            bottom: -1px;
+        }
+
+        &__header-text::before{
+            left: 0;
+        }
+
+        &__header-text::after{
+            right: 0;
+        }
+
+        &__vertical-timeline-element{
+            padding: 0px 0px 30px 0px;
+
+            &:last-child{
+                padding-bottom: 20px;
+                
+            }
+        }
+        .vertical-timeline-element-title-wrapper{
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            h2{
+                font-size: 20px;
+                padding-bottom: 10px;
+                color:var(--yellow-theme-main-color);
+
+
+            }  
+
+            h6{
+                font-style: italic;
+                font-weight: lighter;
+                font-size: 16px;
+                padding-bottom: 10px;
+
+            }
+
+
+        }
+
+        .vertical-timeline-element-title-wrapper-description{
+            font-size: 18px;
+            white-space: pre-line;
+            text-align: justify;
+
+            ul {
+                list-style-type:disc;
+                padding-left: 150px;
+                
+
+                li {
+                  color: var(--yellow-theme-sub-text-color);
+                  font-size: 18px;
+                  margin-bottom: 5px;
+                 
+                
+
+                /* Customizing bullet point */
+              &::marker {
+                font-size: 1.6em; /* Increase the size */
+                color: green; /* Change color to green */
+                
+              }
+              }
+            }
+        }
+
+        .vertical-timeline-element-content{
+            box-shadow: none;
+        }
+
+        .vertical-timeline-element-content-arrow{
+            display: none;
+        }
+
+        .vertical-timeline-element-date{
+            opacity: 1;
+            color: var(--yellow-theme-sub-text-color);
+            font-size: 18px;
+        }
+    }
+}
+
+@media only screen and (max-width : 768px){
+    .timeline{
+        flex-direction: column;
+        &__experience, &__education{
+            width: 100%;
+            gap: 2rem;
+        }
+    }
+    
+    .timeline__experience {
+        margin-top: 100px; /* Increase space before Experience */
+    }
+    .vertical-timeline-element-title-wrapper-description ul {
+        padding-left: 20px !important; /* Ensure padding applies */
+        list-style-type: disc;
+    }
+
+    .vertical-timeline-element-title-wrapper-description ul li {
+        font-size: 16px !important; /* Adjust font size */
+    }
+}
