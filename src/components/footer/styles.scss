@@ -21,13 +21,13 @@
   
   .footer__left,
   .footer__right {
-    font-size: 1.4rem; /* Text size for the footer */
+    font-size: 1.5rem; /* Text size for the footer */
   }
   
   .footer__link {
     color: var(--yellow-theme-main-color); /* Color for the links */
     text-decoration: none;
-    font-weight: bold;
+    font-weight:bolder;
     border-bottom: 2px solid transparent; /* Border for hover effect */
     transition: border-bottom 0.3s ease;
   }

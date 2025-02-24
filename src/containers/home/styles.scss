@@ -240,3 +240,44 @@
     width: 200px; // Make avatar smaller for very small screens
   }
 }
+
+//* Fix top spacing issue for iPhone SE */
+@media only screen and (max-width: 400px) {
+  .home__content-wrapper {
+    padding-top: 100px !important;  /* Increase padding to push content down */
+    min-height: 100vh; /* Ensures it covers full screen */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 2.5rem; // Further reduce text size for very small screens
+    line-height: 3.5rem;
+
+    span.name {
+      font-size: 3rem;
+    }
+
+    .emoji {
+      width: 40px; // Further reduce emoji size for very small screens
+      height: 40px;
+    }
+  }
+
+  .description {
+    font-size: 1.4rem; // Further reduce description font size
+  }
+
+  .home__contact-me button {
+    font-size: 1.4rem;
+    padding: 6px 18px; // Adjust button size for mobile screens
+  }
+
+  .home__avatar-wrapper img {
+    width: 200px; // Make avatar smaller for very small screens
+  }
+}
+
+  
+
