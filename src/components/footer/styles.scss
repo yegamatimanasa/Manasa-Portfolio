@@ -33,6 +33,7 @@
   }
   
   .footer__link:hover {
-    border-bottom: 2px solid var(--yellow-theme-main-color); /* Underline effect on hover */
+    border-bottom: 2px solid var(--white-color); /* Underline effect on hover */
+    color: var(--white-color);
   }
   

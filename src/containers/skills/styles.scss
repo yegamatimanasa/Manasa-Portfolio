@@ -460,7 +460,7 @@ circle:hover {
   margin-right: 60px; /* Space between title and grid */
   text-align: left; /* Align text to the left */
   min-width: 150px; 
-  
+
   
 }
 
@@ -509,6 +509,8 @@ circle:hover {
   .category-title {
     margin-right: 0; /* Reset margin */
     margin-bottom: 25px;
+    text-align: center;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
   }
 
   .skills-grid {
@@ -526,7 +528,8 @@ circle:hover {
   .category-title {
     font-size: 1.6rem; /* Slightly smaller text */
     margin-bottom: 30px; /* More space before grid */
-    border: 1px solid var(--primary-text-color);
+    text-align: center;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
   }
 
   .skills-grid {
@@ -540,6 +543,8 @@ circle:hover {
   .category-title {
     font-size: 1.4rem; /* Adjust size for small screens */
     margin-bottom: 35px; /* More space before the grid */
+    text-align: center;
+    border-bottom: 2px solid var(--yellow-theme-main-color);
   }
 
   .skills-grid {

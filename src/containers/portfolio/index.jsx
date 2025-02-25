@@ -3,13 +3,13 @@ import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsFillBriefcaseFill} from "react-icons/bs";
 import crop from "../../images/crop.jpg";
 import GGEC from "../../images/GGEC.jpg"
-import ColdStorage from "../../images/ColdStorage.jpg";
+import coldS from "../../images/coldS.jpg";
 import Bus from "../../images/Bus.jpg";
 import bookStore from "../../images/bookstore.jpg";
-import calculator from "../../images/calculator.jpg";
 import rice from "../../images/rice.jpg";
 import eye from "../../images/eye.jpg";
 import mosquito from "../../images/mosquito.jpg";
+import calc from "../../images/calc.jpg";
 import "./styles.scss";
 import { useState,useEffect } from "react";
 
@@ -52,7 +52,7 @@ const portfolioData = [
     name: "Cold Storage Management System",
     project: "Full Stack Application ",
     description: "A Smart Cold Storage rental platform with multiple temperature zones for optimal preservation. Users reserve units as needed, while admins manage and update storage seamlessly.",
-    image: ColdStorage,
+    image: coldS,
     github: "https://github.com/yegamatimanasa/ColdStorageManagementSystem",
   },
 
@@ -61,7 +61,7 @@ const portfolioData = [
     name: "Scientific Calculator",
     project: "Web App ",
     description: "A powerful web-based calculator for arithmetic, trigonometry, logarithms, and advanced functions. Designed for accuracy and efficiency, it provides a seamless and intuitive math-solving experience.",
-    image: calculator,
+    image: calc,
     github: "https://github.com/yegamatimanasa/Scientific-Calculator",
   },
 

@@ -77,7 +77,9 @@
           background-size: cover !important;
           background-position: center !important;
           background-repeat: no-repeat;
-          backdrop-filter: blur(20px);
+          -webkit-backdrop-filter: blur(20px); /* Add this line first, it fixes blur for Safari*/
+          backdrop-filter: blur(20px);  /* This line activates blur*/
+          background: rgba(153, 93, 93, 0.6);
           border: 2px solid green;
           text-align: justify;
           display: flex;

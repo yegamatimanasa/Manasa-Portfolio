@@ -144,8 +144,10 @@
   }
   
   .navbar__container__menu__item__links:hover {
-    color: var(--yellow-theme-hover-color); /* Add a hover effect */
-    border-bottom: 2px solid var(--yellow-theme-main-color); /* Bottom border on hover */
+    color: var(--white-color); /* Add a hover effect */
+    border-bottom: 1px solid var(--white-color); /* Bottom border on hover */
+    background: var(--yellow-theme-nav-background-color);
+   
   }
   
   /* Social Icons Styling */
@@ -161,7 +163,7 @@
   }
   
   .navbar__container__icons a:hover {
-    color: var(--yellow-theme-hover-color); /* Hover effect on icons */
+    color: var(--white-color); /* Hover effect on icons */
   }
   
   /* Hamburger Icon - Hidden on larger screens */
