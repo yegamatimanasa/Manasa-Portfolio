@@ -2,6 +2,7 @@ import React from "react";
 import PageHeaderContent from "../../components/pageHeaderContent";
 import { BsFillBriefcaseFill} from "react-icons/bs";
 import crop from "../../images/crop.jpg";
+import weathertracker from "../../images/weathertracker.jpg";
 import GGEC from "../../images/GGEC.jpg"
 import coldS from "../../images/coldS.jpg";
 import Bus from "../../images/Bus.jpg";
@@ -24,6 +25,15 @@ const portfolioData = [
   },
   {
     id: 2,
+    name: "Weather Tracker",
+    project: "Full Stack Application ",
+    description: " A real-time weather app built with React, Vite, and OpenWeather API, featuring dynamic video backgrounds, live forecasts, and air quality insights for an immersive and responsive user experience.",
+    image: weathertracker ,
+    github: "https://github.com/yegamatimanasa/Weather-Tracker",
+  },
+
+  {
+    id: 3,
     name: "Greenhouse Gas Emission Calculator",
     project: "Full Stack Application ",
     description: "A web tool for estimating GHG emissions based on energy use, transport, and waste, helping users track and reduce their carbon footprint.",
@@ -32,7 +42,7 @@ const portfolioData = [
   },
 
   {
-    id: 3,
+    id: 4,
     name: "Online Book Store",
     project: "Full Stack Application ",
     description: "A seamless online bookstore where users can search, buy, and access books with detailed information and secure transactions.",
@@ -40,7 +50,7 @@ const portfolioData = [
     github: "https://github.com/yegamatimanasa/OnlineBookStore",
   },
   {
-    id: 4,
+    id: 5,
     name: "Travel Agency",
     project: "Full Stack Application ",
     description: "A real-time ticket reservation platform with secure payments and instant booking confirmations via email and SMS. Admins manage bus details and schedules, ensuring a seamless travel experience.",
@@ -48,7 +58,7 @@ const portfolioData = [
     github: "https://github.com/yegamatimanasa/ColdStorageManagementSystem",
   },
   {
-    id: 5,
+    id: 6,
     name: "Cold Storage Management System",
     project: "Full Stack Application ",
     description: "A Smart Cold Storage rental platform with multiple temperature zones for optimal preservation. Users reserve units as needed, while admins manage and update storage seamlessly.",
@@ -57,7 +67,7 @@ const portfolioData = [
   },
 
   {
-    id: 6,
+    id: 7,
     name: "Scientific Calculator",
     project: "Web App ",
     description: "A powerful web-based calculator for arithmetic, trigonometry, logarithms, and advanced functions. Designed for accuracy and efficiency, it provides a seamless and intuitive math-solving experience.",
@@ -66,7 +76,7 @@ const portfolioData = [
   },
 
   {
-    id: 7,
+    id: 8,
     name: "Rice Image Classification",
     project: "Machine Learning Model",
     description: "This project utilizes CNNs, ANNs, and DNNs to classify five rice varieties with 100% accuracy, analyzing morphological, shape, and color features from 75,000 images.",
@@ -74,7 +84,7 @@ const portfolioData = [
     github: "https://github.com/yegamatimanasa/Rice-Image-Classification-CNN",
   },
   {
-    id: 8,
+    id: 9,
     name: "Smart Eye Movement Detection",
     project: "Machine Learning Model",
     description: "This project utilizes CNN to accurately classify different mosquito species based on images captured on human skin. By leveraging deep learning, it enhances vector surveillance, aiding in disease prevention and ecological studies. ",
@@ -82,7 +92,7 @@ const portfolioData = [
     github: "https://github.com/yegamatimanasa/Eye-Detection-using-CNN",
   },
   {
-    id: 9,
+    id: 10,
     name: "Masquito Species Classification",
     project: "Machine Learning Model",
     description: "This project utilizes CNN to classify mosquito species from images captured on human skin. By analyzing unique visual patterns, the model enhances species identification, supporting vector-borne disease prevention and ecological research.",

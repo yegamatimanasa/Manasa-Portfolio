@@ -27,9 +27,9 @@
     }
   }
 
-  &__text-wrapper {
+  &__text-wrapper { 
     max-width: 600px;
-
+    
     h1 {
       font-size: 4rem;
       line-height: 5rem;
@@ -41,7 +41,7 @@
       }
     
       .name {
-        font-size: 4.5rem;
+        font-size: 4rem;
         color: var(--yellow-theme-main-color); // Apply yellow color to "Manasa"
         margin-left: 10px; // Add space between "I'm" and "Manasa"
       }
@@ -50,8 +50,8 @@
         width: 70px; // Control the size of the emoji
         height: 70px;
         display: inline-block;
-        vertical-align: middle; // Align emoji with the text "Hello!"
-        margin-left: 10px; // Space between emoji and text
+        vertical-align:sub; // Align emoji with the text "Hello!"
+        margin-left: 5px; // Space between emoji and text
       }
     
       @media only screen and (max-width: 768px) {
